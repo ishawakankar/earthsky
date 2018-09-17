@@ -1,0 +1,167 @@
+$dark: rgba(0, 0, 0,0.9);
+$chg:black;
+html,
+body
+{
+    background-color: #000000;
+    .navbar-expand-lg .navbar-nav .nav-link
+    {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    h5
+    {
+        font-family: 'Permanent Marker', cursive;
+    }
+    h2
+    {
+        text-align: center;
+    }
+    h6
+    {
+        text-align: center;
+    }
+    .sec
+    {
+    background-image:url('../images/img3.jpg');
+    background-size: 100%;
+    }
+
+    margin-right:0;
+    padding:0px;
+    margin-top: -20px;
+    h1
+    {
+        font-family: 'Great Vibes', cursive;
+    }
+    
+    .headings
+    {
+        color: aliceblue;
+    }
+    footer
+    {
+        background-color:black;
+        color: beige;
+        padding: 20px;
+        font-family: 'Alegreya', serif;
+
+        
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+        }
+          
+          .fa:hover {
+              opacity: 0.7;
+          }
+          
+          .fa-facebook {
+            background: #3B5998;
+            color: white;
+          }
+          .fa-instagram {
+            background: #f09433; 
+            background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+            background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+            color: white;
+        }
+          
+          .fa-twitter {
+            background: #55ACEE;
+            color: white;
+          }
+          
+    }
+    .card
+    {
+        margin: 10px;
+    }
+
+    p
+    {
+        text-align: justify;
+    }
+    
+    li #carouselExampleIndicators
+    {
+        border-radius: 50%;
+    }
+      
+    $mobile:990px;
+    @mixin mobile {
+        @media(max-width: #{$mobile})
+        { 
+            @content;
+            
+        }
+    }
+    #home
+    { 
+        .carousel-inner
+        {
+        @include mobile
+        { 
+            margin-top: 90px;
+            
+        }
+    }
+    }
+    .btn-lg
+    {
+        padding: 0px;
+        padding-bottom: 5px;
+    }
+
+    .slideanim{visibility: hidden;}
+    .slide
+    {
+        animation: slide;
+       // -webkit-animation-name:slide;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        visibility: visible;
+    }
+    iframe
+    {
+        width:100%;
+        height:230px;
+        border:0;
+    }
+    .jumbotron
+    {
+        margin: 15px;
+        padding: 15px;
+        background-color:rgba($color: #000000, $alpha: 0.9);
+        color: wheat;
+        border-radius: 3%;
+    }
+    .headin
+    {
+        background-color: rgba($color: #fff, $alpha: 0.3);
+        text-align: center;
+        color: #000;
+    }
+    .jumbotron2
+    {
+        margin: 15px;
+        padding: 15px;
+        opacity: 0;
+        height: 10vh;
+        color: wheat;
+        border-radius: 3%;
+    }
+    .jumbotron1
+    {
+        margin: 15px;
+        padding: 15px;
+        background-color:rgba($color: #fff, $alpha: 0.4);
+        color: black;
+        border-radius: 3%;
+    }
+}
